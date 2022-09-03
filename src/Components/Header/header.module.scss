@@ -1,0 +1,43 @@
+  .header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 20px;
+    margin-bottom: 100px;
+    .logo{
+      font-style: normal;
+      font-weight: 700;
+      font-size: 30px;
+      line-height: 35px;
+      color: #20272F;
+    }
+    .menu{
+      display: flex;
+      align-items: center;
+      gap: 30px;
+      .item{
+        color: #20272F;
+      }
+    }
+    .change{
+      width: 150px;
+      height: 40px;
+      background: #1672DE;
+      border-radius: 12px;
+      border: none;
+      outline: none;
+      font-weight: 600;
+      font-size: 12px;
+      line-height: 14px;
+      color: #FFFFFF;
+      cursor: pointer;
+    }
+  }
+  
+  @media (max-width: 1000px) {
+    .header{
+      .menu{
+        display: none;
+      }
+    }
+  }

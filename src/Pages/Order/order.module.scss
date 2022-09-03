@@ -1,0 +1,38 @@
+.order{
+  display: block;
+  margin: 0 auto;
+  .title{
+    color: #20272F;
+    font-size: 52px;
+    font-weight: 600;
+    margin-bottom: 10px;
+  }
+  .subtitle{
+    font-weight: 400;
+    font-size: 18px;
+    color: green;
+    margin-bottom: 30px;
+  }
+  .status{
+    //font-size: 14px;
+    margin-bottom: 20px;
+    span{
+      color: orange;
+      font-weight: 700;
+    }
+  }
+  .block{
+    display: flex;
+    align-items: flex-start;
+    gap: 30px;
+    .info{
+      .amount{
+        margin-bottom: 10px;
+        color: blue;
+      }
+      .wallet{
+        color: blue;
+      }
+    }
+  }
+}
