@@ -2,12 +2,14 @@ import React, { FunctionComponent } from 'react';
 // @ts-ignore
 import s from "./landing.module.scss"
 import axios from "axios"
+import {useNavigate} from "react-router-dom";
 
 interface OwnProps {}
 
 type Props = OwnProps;
 
 const Landing: FunctionComponent<Props> = (props) => {
+    const navigate = useNavigate()
     const [wallets, setWallets] = React.useState([{
         name: "",
         address: ""
@@ -97,7 +99,7 @@ const Landing: FunctionComponent<Props> = (props) => {
                           <input type="text" placeholder={"example@gmail.com"} style={{width: "100%"}}/>
                       </div>
                   </div>
-                  <button>Change crypto</button>
+                  <button onClick={()=> navigate(`/order/${depositValute}/${withdrawValute}/${amount}`)}>Change crypto</button>
               </form>
           </section>
           <section className={s.available}>
